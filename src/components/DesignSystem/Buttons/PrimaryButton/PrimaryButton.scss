@@ -1,0 +1,26 @@
+@import '../../../../styles/boxes';
+@import '../../../../styles/typography';
+@import '../../../../styles/variables';
+
+.primary-button {
+  background: var(--Color-Utility-Blue-700, #1d4ed8);
+  box-shadow: 0 3px 5px 0 #1d4ed80a;
+  color: var(--Color-Primary-White, #ffffff);
+}
+
+.primary-button svg path {
+  fill: var(--Color-Primary-White, #ffffff);
+}
+
+.primary-button:hover {
+  background: var(--Color-Utility-Blue-800, #1e40af);
+}
+
+.primary-button:active {
+  background: var(--Color-Utility-Blue-900, #1e3a8a);
+}
+
+.primary-button:focus {
+  background: var(--Color-Utility-Blue-700, #1d4ed8);
+  outline: 2px solid var(--Color-Utility-Blue-300, #93c5fd);
+}
