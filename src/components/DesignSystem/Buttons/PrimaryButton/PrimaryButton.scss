@@ -1,26 +1,24 @@
-@import '../../../../styles/boxes';
-@import '../../../../styles/typography';
-@import '../../../../styles/variables';
+@import '../../../../styles/colors';
 
 .primary-button {
-  background: var(--Color-Utility-Blue-700, #1d4ed8);
+  background: $utility-blue-700;
   box-shadow: 0 3px 5px 0 #1d4ed80a;
-  color: var(--Color-Primary-White, #ffffff);
+  color: $primary-white;
 }
 
 .primary-button svg path {
-  fill: var(--Color-Primary-White, #ffffff);
+  fill: $primary-white;
 }
 
 .primary-button:hover {
-  background: var(--Color-Utility-Blue-800, #1e40af);
+  background: $utility-blue-800;
 }
 
 .primary-button:active {
-  background: var(--Color-Utility-Blue-900, #1e3a8a);
+  background: $utility-blue-900;
 }
 
 .primary-button:focus {
-  background: var(--Color-Utility-Blue-700, #1d4ed8);
-  outline: 2px solid var(--Color-Utility-Blue-300, #93c5fd);
+  background: $utility-blue-700;
+  outline: 2px solid $utility-blue-300;
 }
