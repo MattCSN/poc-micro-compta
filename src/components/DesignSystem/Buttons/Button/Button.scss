@@ -3,6 +3,7 @@
 @import '../../../../styles/variables';
 
 button.gustave-button {
+  @include medium-text-base;
   @include flexbox-gap-centered(8px);
   padding: $button-padding;
   border-radius: $button-border-radius;
@@ -11,6 +12,7 @@ button.gustave-button {
   outline: none;
 }
 
-button.gustave-button span {
-  @include medium-text-base;
+.disabled {
+  cursor: not-allowed !important;
+  opacity: 50%;
 }
