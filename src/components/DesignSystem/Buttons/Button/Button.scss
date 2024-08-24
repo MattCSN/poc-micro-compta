@@ -1,0 +1,16 @@
+@import '../../../../styles/boxes';
+@import '../../../../styles/typography';
+@import '../../../../styles/variables';
+
+button.gustave-button {
+  @include flexbox-gap-centered(8px);
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button.gustave-button span {
+  @include medium-text-base;
+}

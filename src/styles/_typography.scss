@@ -1,0 +1,15 @@
+@mixin typography($font-size: 16px, $font-weight: 400, $line-height: 24px, $text-align: left) {
+  font-family: 'Golos Text', sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-align: $text-align;
+}
+
+@mixin regular-text-md {
+  @include typography(16px, 400, 24px, left);
+}
+
+@mixin medium-text-base {
+  @include typography(16px, 500, 24px, left);
+}
