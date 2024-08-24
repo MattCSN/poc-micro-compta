@@ -1,0 +1,85 @@
+//Primary
+$primary-black: #111827;
+$primary-white: #fff;
+
+//Gray
+$gray-50: #f3f4f7;
+$gray-100: #ebecf0;
+$gray-200: #dfe2e7;
+$gray-300: #ced3d9;
+$gray-400: #9ca3af;
+$gray-500: #6b7280;
+$gray-600: #4b5563;
+$gray-700: #374151;
+$gray-800: #1f2937;
+
+//Utility
+//Blue
+$utility-blue-50: #e5f1ff;
+$utility-blue-100: #d2e5fe;
+$utility-blue-200: #b4d5fe;
+$utility-blue-300: #93c5fd;
+$utility-blue-400: #60a5fa;
+$utility-blue-500: #3b82f6;
+$utility-blue-600: #2563eb;
+$utility-blue-700: #1d4ed8;
+$utility-blue-800: #1e40af;
+$utility-blue-900: #1e3a8a;
+$utility-blue-950: #172554;
+//Green
+$utility-green-50: #e3fcf0;
+$utility-green-100: #ccf9e2;
+$utility-green-200: #a1f2cd;
+$utility-green-300: #6ae6b5;
+$utility-green-400: #34d399;
+$utility-green-500: #10b981;
+$utility-green-600: #059669;
+$utility-green-700: #047857;
+$utility-green-800: #065f46;
+$utility-green-900: #064e3b;
+$utility-green-950: #022c22;
+//Violet
+$utility-violet-50: #eeebff;
+$utility-violet-100: #dfd8fd;
+$utility-violet-200: #cdc3fe;
+$utility-violet-300: #bcabfd;
+$utility-violet-400: #a78bfa;
+$utility-violet-500: #8b5cf6;
+$utility-violet-600: #7c3aed;
+$utility-violet-700: #6d28d9;
+$utility-violet-800: #5b21b6;
+$utility-violet-900: #4c1d95;
+$utility-violet-950: #2e1065;
+//Orange
+$utility-orange-50: #fff7d6;
+$utility-orange-100: #feefb4;
+$utility-orange-200: #fde587;
+$utility-orange-300: #fcd34d;
+$utility-orange-400: #fbbf24;
+$utility-orange-500: #f59e0b;
+$utility-orange-600: #d97706;
+$utility-orange-700: #b45309;
+$utility-orange-800: #92400e;
+$utility-orange-900: #78350f;
+$utility-orange-950: #431407;
+//Red
+$utility-red-50: #ffe5e7;
+$utility-red-100: #ffd1d5;
+$utility-red-200: #feb9c1;
+$utility-red-300: #fd9ba7;
+$utility-red-400: #fb7185;
+$utility-red-500: #f43f5e;
+$utility-red-600: #e11d48;
+$utility-red-700: #be123c;
+$utility-red-800: #9f1239;
+$utility-red-900: #881337;
+$utility-red-950: #4c0519;
+
+//Gradient
+$ocean: linear-gradient(180deg, $utility-blue-700 0%, $utility-blue-800 100%);
+$shy: linear-gradient(
+  273.04deg,
+  $utility-violet-50 0%,
+  $utility-blue-50 50%,
+  $utility-violet-50 100%
+);
