@@ -1,0 +1,26 @@
+@import '../../../../styles/colors';
+
+.tertiary-button {
+  background: none;
+  color: $gray-500;
+}
+
+.tertiary-button svg path {
+  fill: $gray-500;
+}
+
+.tertiary-button:hover {
+  color: $primary-black;
+}
+
+.tertiary-button:hover svg path {
+  fill: $primary-black;
+}
+
+.tertiary-button:active {
+  color: $gray-600;
+}
+
+.tertiary-button:hover svg path {
+  fill: $gray-600;
+}
