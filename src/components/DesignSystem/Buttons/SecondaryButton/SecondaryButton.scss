@@ -1,10 +1,13 @@
 @import '../../../../styles/colors';
+@import '../../../../styles/variables';
 
 .secondary-button {
   background: $primary-white;
   box-shadow: 0 3px 5px 0 #1d4ed80a;
 
   color: $utility-blue-900;
+  border: 1px solid $utility-blue-200 !important;
+  padding: $button-border-padding !important;
 }
 
 .secondary-button svg path {
@@ -13,8 +16,10 @@
 
 .secondary-button:hover {
   background: $utility-blue-50;
+  border: 1px solid $utility-blue-300 !important;
 }
 
 .secondary-button:active {
-  background: $utility-blue-300;
+  background: $utility-blue-100;
+  border: 1px solid $utility-blue-300 !important;
 }

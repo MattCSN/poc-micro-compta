@@ -3,6 +3,20 @@
 @import '../../../../styles/typography';
 @import '../../../../styles/variables';
 
+button {
+  all: unset;
+  display: flex;
+  cursor: pointer;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button:focus:not(:-moz-focusring) {
+  outline: none;
+}
+
 button.gustave-button {
   @include medium-text-base;
   @include flexbox-gap-centered(8px);
@@ -11,6 +25,7 @@ button.gustave-button {
   cursor: pointer;
   border: none;
   outline: none;
+  height: 24px;
 }
 
 .disabled {

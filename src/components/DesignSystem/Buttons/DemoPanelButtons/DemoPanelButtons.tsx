@@ -15,7 +15,7 @@ const DemoPanelButtons: React.FC = () => {
       <FlexBox gap={'24px'}>
         <FlexBox flexDirection={'column'} gap={'24px'}>
           <h3>Primary</h3>
-          <FlexBox gap={'24px'}>
+          <FlexBox gap={'24px'} height={'90px'} width={'100px'}>
             <PrimaryButton label={'Label'} />
             <PrimaryButton label={'Label'} iconComponent={<CheckCircle />} />
             <PrimaryButton iconComponent={<CheckCircle />} />
@@ -33,7 +33,7 @@ const DemoPanelButtons: React.FC = () => {
             <SecondaryButton label={'Label'} iconComponent={<PencilSquare />} />
             <SecondaryButton iconComponent={<PencilSquare />} />
           </FlexBox>
-          <FlexBox gap={'24px'}>
+          <FlexBox gap={'24px'} boxSizing={'content-box'}>
             <SecondaryButton label={'Label'} disabled={true} />
             <SecondaryButton label={'Label'} iconComponent={<PencilSquare />} disabled={true} />
             <SecondaryButton iconComponent={<PencilSquare />} disabled={true} />
