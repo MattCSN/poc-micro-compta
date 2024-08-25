@@ -1,0 +1,20 @@
+@import '../../../../styles/colors';
+
+.secondary-button {
+  background: $primary-white;
+  box-shadow: 0 3px 5px 0 #1d4ed80a;
+
+  color: $utility-blue-900;
+}
+
+.secondary-button svg path {
+  fill: $utility-blue-900;
+}
+
+.secondary-button:hover {
+  background: $utility-blue-50;
+}
+
+.secondary-button:active {
+  background: $utility-blue-300;
+}
