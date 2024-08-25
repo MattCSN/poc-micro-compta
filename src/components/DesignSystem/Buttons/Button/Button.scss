@@ -22,9 +22,6 @@ button.gustave-button {
   @include flexbox-gap-centered(8px);
   padding: $button-padding;
   border-radius: $button-border-radius;
-  cursor: pointer;
-  border: none;
-  outline: none;
   height: 24px;
 }
 
@@ -35,4 +32,8 @@ button.gustave-button {
 
 .gustave-button:focus {
   outline: 2px solid $utility-blue-300;
+}
+
+button.icon-only-button {
+  padding: $button-icon-padding;
 }
