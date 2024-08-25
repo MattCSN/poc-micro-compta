@@ -4,14 +4,69 @@ import PrimaryButton from '@/components/DesignSystem/Buttons/PrimaryButton/Prima
 import SecondaryButton from '@/components/DesignSystem/Buttons/SecondaryButton/SecondaryButton';
 import DangerButton from '@/components/DesignSystem/Buttons/DangerButton/DangerButton';
 import TertiaryButton from '@/components/DesignSystem/Buttons/TertiaryButton/TertiaryButton';
-import CheckCircle from '@/assets/icons/heroicons-outline/check-circle.svg';
+import CheckCircle from '@/assets/icons/heroicons-solid/check-circle.svg';
 import PencilSquare from '@/assets/icons/heroicons-solid/pencil-square.svg';
 import Trash from '@/assets/icons/heroicons-solid/trash.svg';
+import Button from '@/components/DesignSystem/Buttons/Button/Button';
+import BorderedButton from '@/components/DesignSystem/Buttons/BorderedButton/BorderedButton';
 
 const DemoPanelButtons: React.FC = () => {
   return (
     <FlexBox flexDirection={'column'} gap={'24px'}>
       <h2>Buttons</h2>
+      <FlexBox gap={'24px'}>
+        <FlexBox flexDirection={'column'} gap={'24px'}>
+          <h3>generic</h3>
+          <FlexBox gap={'24px'}>
+            <Button label={'Label'} />
+            <Button label={'Label'} iconComponent={<CheckCircle />} />
+            <Button iconComponent={<CheckCircle />} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <Button label={'Label'} disabled={true} />
+            <Button label={'Label'} iconComponent={<CheckCircle />} disabled={true} />
+            <Button iconComponent={<CheckCircle />} disabled={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <Button label={'Label'} small={true} />
+            <Button label={'Label'} iconComponent={<CheckCircle />} small={true} />
+            <Button iconComponent={<CheckCircle />} small={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <Button label={'Label'} disabled={true} small={true} />
+            <Button label={'Label'} iconComponent={<CheckCircle />} disabled={true} small={true} />
+            <Button iconComponent={<CheckCircle />} disabled={true} small={true} />
+          </FlexBox>
+        </FlexBox>
+        <FlexBox flexDirection={'column'} gap={'24px'}>
+          <h3>generic bordered</h3>
+          <FlexBox gap={'24px'}>
+            <BorderedButton label={'Label'} />
+            <BorderedButton label={'Label'} iconComponent={<CheckCircle />} />
+            <BorderedButton iconComponent={<CheckCircle />} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <BorderedButton label={'Label'} disabled={true} />
+            <BorderedButton label={'Label'} iconComponent={<CheckCircle />} disabled={true} />
+            <BorderedButton iconComponent={<CheckCircle />} disabled={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <BorderedButton label={'Label'} small={true} />
+            <BorderedButton label={'Label'} iconComponent={<CheckCircle />} small={true} />
+            <BorderedButton iconComponent={<CheckCircle />} small={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <BorderedButton label={'Label'} disabled={true} small={true} />
+            <BorderedButton
+              label={'Label'}
+              iconComponent={<CheckCircle />}
+              disabled={true}
+              small={true}
+            />
+            <BorderedButton iconComponent={<CheckCircle />} disabled={true} small={true} />
+          </FlexBox>
+        </FlexBox>
+      </FlexBox>
       <FlexBox gap={'24px'}>
         <FlexBox flexDirection={'column'} gap={'24px'}>
           <h3>Primary</h3>

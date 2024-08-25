@@ -130,11 +130,11 @@ You have access to `theme` object via `sx` prop and `styled-components`:
 
 ```js
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import BorderedButton from '@mui/material/BorderedButton';
 import { styled } from '@mui/material/styles';
 
 // styled-components
-const MyCoolButton = styled(Button)(({ theme }) => ({
+const MyCoolButton = styled(BorderedButton)(({ theme }) => ({
   marginRight: theme.spacing(1),
   color: theme.palette.text.disabled,
 }));
@@ -155,7 +155,7 @@ Here how the base file/folder structure looks like:
 
 Special attention deserves `pages/`, `sections/` and `components/`. These are the main building blocks of the application and here is the difference between them:
 
-- `components` - usually (but not necessarily), in `components/` we keep dummy, stateless components, that are being used in different parts of the application, and they don't belong to the particular page/section, like `Button`, `List`, `Table`, `Loading`, `Divider`, `Flex`, `Dialog`, etc.
+- `components` - usually (but not necessarily), in `components/` we keep dummy, stateless components, that are being used in different parts of the application, and they don't belong to the particular page/section, like `BorderedButton`, `List`, `Table`, `Loading`, `Divider`, `Flex`, `Dialog`, etc.
 - `sections` - sections are complete parts of the application, that have their own logic, like `Navigation`, `Sidebar`, `Notifications`, etc.
 - `pages` - pages represent the root routes, like `/profile` renders the `Profile` page, `/login` renders `Login` page. Pages are made of sections (no need to have [Page]/sections/ folder). If a section is used on multiple pages it should be moved to `/root/sections`.
   - in some project you may see `/features` instead of `/sections`

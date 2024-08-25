@@ -1,0 +1,17 @@
+@import '../../../../styles/boxes';
+@import '../../../../styles/colors';
+@import '../../../../styles/typography';
+@import '../../../../styles/variables';
+
+button.gustave-button.bordered-button {
+  border: 1px solid $gray-500;
+  padding: $button-border-padding;
+}
+
+button.gustave-button.icon-only-button {
+  padding: $button-icon-border-padding;
+}
+
+button.gustave-button:focus {
+  border-color: transparent;
+}
