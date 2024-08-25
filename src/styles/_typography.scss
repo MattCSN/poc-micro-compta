@@ -6,10 +6,10 @@
   text-align: $text-align;
 }
 
-@mixin regular-text-md {
-  @include typography(16px, 400, 24px, left);
-}
-
 @mixin medium-text-base {
   @include typography(16px, 500, 24px, left);
+}
+
+@mixin medium-text-sm {
+  @include typography(14px, 500, 20px, left);
 }

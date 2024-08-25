@@ -25,6 +25,17 @@ button.gustave-button {
   height: 24px;
 }
 
+button.gustave-button.small-button {
+  @include medium-text-sm;
+  padding: $button-padding-small;
+  height: 20px;
+}
+
+button.gustave-button.small-button svg {
+  height: 20px;
+  width: 20px;
+}
+
 .disabled {
   cursor: not-allowed !important;
   opacity: 50%;
@@ -36,4 +47,8 @@ button.gustave-button {
 
 button.icon-only-button {
   padding: $button-icon-padding;
+}
+
+button.icon-only-button.small-button {
+  padding: $button-icon-padding-small;
 }

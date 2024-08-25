@@ -7,12 +7,15 @@ interface ButtonProps {
   iconComponent?: React.ReactNode;
   disabled?: boolean;
   className?: string;
+  small?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, iconComponent, disabled, className }) => {
-  const buttonClassName = `gustave-button ${className} ${disabled ? 'disabled' : ''} ${
-    !label ? 'icon-only-button' : ''
-  }`;
+const Button: React.FC<ButtonProps> = ({ label, iconComponent, disabled, className, small }) => {
+  const buttonClassName = `gustave-button
+  ${className} 
+  ${disabled ? 'disabled' : ''} 
+  ${!label ? 'icon-only-button' : ''}
+  ${small ? 'small-button' : ''}`;
 
   return (
     <FlexBox>

@@ -25,6 +25,21 @@ const DemoPanelButtons: React.FC = () => {
             <PrimaryButton label={'Label'} iconComponent={<CheckCircle />} disabled={true} />
             <PrimaryButton iconComponent={<CheckCircle />} disabled={true} />
           </FlexBox>
+          <FlexBox gap={'24px'}>
+            <PrimaryButton label={'Label'} small={true} />
+            <PrimaryButton label={'Label'} iconComponent={<CheckCircle />} small={true} />
+            <PrimaryButton iconComponent={<CheckCircle />} small={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <PrimaryButton label={'Label'} disabled={true} small={true} />
+            <PrimaryButton
+              label={'Label'}
+              iconComponent={<CheckCircle />}
+              disabled={true}
+              small={true}
+            />
+            <PrimaryButton iconComponent={<CheckCircle />} disabled={true} small={true} />
+          </FlexBox>
         </FlexBox>
         <FlexBox flexDirection={'column'} gap={'24px'}>
           <h3>Secondary</h3>

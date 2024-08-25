@@ -6,15 +6,17 @@ interface ButtonProps {
   label?: string;
   iconComponent?: React.ReactNode;
   disabled?: boolean;
+  small?: boolean;
 }
 
-const PrimaryButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled }) => {
+const PrimaryButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled, small }) => {
   return (
     <Button
       className="primary-button"
       label={label}
       iconComponent={iconComponent}
       disabled={disabled}
+      small={small}
     />
   );
 };
