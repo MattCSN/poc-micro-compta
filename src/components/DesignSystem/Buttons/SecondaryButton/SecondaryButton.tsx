@@ -1,6 +1,6 @@
 import React from 'react';
-import './SecondaryButton.scss';
 import Button from '@/components/DesignSystem/Buttons/Button/Button';
+import './SecondaryButton.scss';
 
 interface ButtonProps {
   label?: string;

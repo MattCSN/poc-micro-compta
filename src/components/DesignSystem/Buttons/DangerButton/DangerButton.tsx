@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@/components/DesignSystem/Buttons/Button/Button';
-import './PrimaryButton.scss';
+import './DangerButton.scss';
 
 interface ButtonProps {
   label?: string;
@@ -8,10 +8,10 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-const PrimaryButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled }) => {
+const DangerButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled }) => {
   return (
     <Button
-      className="primary-button"
+      className="danger-button"
       label={label}
       iconComponent={iconComponent}
       disabled={disabled}
@@ -19,4 +19,4 @@ const PrimaryButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled }
   );
 };
 
-export default PrimaryButton;
+export default DangerButton;

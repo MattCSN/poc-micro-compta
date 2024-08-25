@@ -1,0 +1,20 @@
+@import '../../../../styles/colors';
+
+.danger-button {
+  background: $utility-red-700;
+  box-shadow: 0 2px 5px 0 #be123c0a;
+
+  color: $primary-white;
+}
+
+.danger-button svg path {
+  fill: $primary-white;
+}
+
+.danger-button:hover {
+  background: $utility-red-800;
+}
+
+.danger-button:active {
+  background: $utility-red-900;
+}
