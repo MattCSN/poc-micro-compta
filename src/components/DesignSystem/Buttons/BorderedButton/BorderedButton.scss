@@ -8,10 +8,18 @@ button.gustave-button.bordered-button {
   padding: $button-border-padding;
 }
 
-button.gustave-button.icon-only-button {
+button.gustave-button.bordered-button.icon-only-button {
   padding: $button-icon-border-padding;
 }
 
-button.gustave-button:focus {
+button.gustave-button.bordered-button:focus {
   border-color: transparent;
+}
+
+button.gustave-button.bordered-button.small-button {
+  padding: $button-border-padding-small;
+}
+
+button.gustave-button.bordered-button.icon-only-button.small-button {
+  padding: $button-icon-border-padding-small;
 }
