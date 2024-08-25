@@ -1,24 +1,22 @@
 import React from 'react';
 import Button from '@/components/DesignSystem/Buttons/Button/Button';
-import './TertiaryButton.scss';
+import './SecondaryButtonLegacy.scss';
 
 interface ButtonProps {
   label?: string;
   iconComponent?: React.ReactNode;
   disabled?: boolean;
-  small?: boolean;
 }
 
-const TertiaryButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled, small }) => {
+const SecondaryButtonLegacy: React.FC<ButtonProps> = ({ label, iconComponent, disabled }) => {
   return (
     <Button
-      className="tertiary-button"
+      className="secondary-button-legacy"
       label={label}
       iconComponent={iconComponent}
       disabled={disabled}
-      small={small}
     />
   );
 };
 
-export default TertiaryButton;
+export default SecondaryButtonLegacy;

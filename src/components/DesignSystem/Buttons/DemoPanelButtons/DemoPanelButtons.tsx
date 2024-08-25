@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlexBox } from '@/components/styled';
 import PrimaryButton from '@/components/DesignSystem/Buttons/PrimaryButton/PrimaryButton';
-import SecondaryButton from '@/components/DesignSystem/Buttons/SecondaryButton/SecondaryButton';
+import SecondaryButtonLegacy from '@/components/DesignSystem/Buttons/SecondaryButtonLegacy/SecondaryButtonLegacy';
 import DangerButton from '@/components/DesignSystem/Buttons/DangerButton/DangerButton';
 import TertiaryButton from '@/components/DesignSystem/Buttons/TertiaryButton/TertiaryButton';
 import CheckCircle from '@/assets/icons/heroicons-solid/check-circle.svg';
@@ -9,6 +9,7 @@ import PencilSquare from '@/assets/icons/heroicons-solid/pencil-square.svg';
 import Trash from '@/assets/icons/heroicons-solid/trash.svg';
 import Button from '@/components/DesignSystem/Buttons/Button/Button';
 import BorderedButton from '@/components/DesignSystem/Buttons/BorderedButton/BorderedButton';
+import SecondaryButton from '@/components/DesignSystem/Buttons/SecondaryButton/SecondaryButton';
 
 const DemoPanelButtons: React.FC = () => {
   return (
@@ -110,6 +111,23 @@ const DemoPanelButtons: React.FC = () => {
           </FlexBox>
         </FlexBox>
         <FlexBox flexDirection={'column'} gap={'24px'}>
+          <h3>Secondary LEGACY</h3>
+          <FlexBox gap={'24px'}>
+            <SecondaryButtonLegacy label={'Label'} />
+            <SecondaryButtonLegacy label={'Label'} iconComponent={<PencilSquare />} />
+            <SecondaryButtonLegacy iconComponent={<PencilSquare />} />
+          </FlexBox>
+          <FlexBox gap={'24px'} boxSizing={'content-box'}>
+            <SecondaryButtonLegacy label={'Label'} disabled={true} />
+            <SecondaryButtonLegacy
+              label={'Label'}
+              iconComponent={<PencilSquare />}
+              disabled={true}
+            />
+            <SecondaryButtonLegacy iconComponent={<PencilSquare />} disabled={true} />
+          </FlexBox>
+        </FlexBox>
+        <FlexBox flexDirection={'column'} gap={'24px'}>
           <h3>Danger</h3>
           <FlexBox gap={'24px'}>
             <DangerButton label={'Label'} />
@@ -134,8 +152,24 @@ const DemoPanelButtons: React.FC = () => {
             <TertiaryButton label={'Label'} iconComponent={<PencilSquare />} disabled={true} />
             <TertiaryButton iconComponent={<PencilSquare />} disabled={true} />
           </FlexBox>
+          <FlexBox gap={'24px'}>
+            <TertiaryButton label={'Label'} small={true} />
+            <TertiaryButton label={'Label'} iconComponent={<CheckCircle />} small={true} />
+            <TertiaryButton iconComponent={<CheckCircle />} small={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <TertiaryButton label={'Label'} disabled={true} small={true} />
+            <TertiaryButton
+              label={'Label'}
+              iconComponent={<CheckCircle />}
+              disabled={true}
+              small={true}
+            />
+            <TertiaryButton iconComponent={<CheckCircle />} disabled={true} small={true} />
+          </FlexBox>
         </FlexBox>
       </FlexBox>
+      <h2>The end</h2>
     </FlexBox>
   );
 };

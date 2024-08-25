@@ -1,13 +1,10 @@
 @import '../../../../styles/colors';
-@import '../../../../styles/variables';
 
-button.secondary-button {
+button.gustave-button.secondary-button {
   background: $primary-white;
   box-shadow: 0 3px 5px 0 #1d4ed80a;
-
   color: $utility-blue-900;
-  border: 1px solid $utility-blue-200;
-  padding: $button-border-padding;
+  border-color: $utility-blue-200;
 }
 
 button.secondary-button svg path {
@@ -16,69 +13,9 @@ button.secondary-button svg path {
 
 button.secondary-button:hover {
   background: $utility-blue-50;
-  border: 1px solid $utility-blue-300;
+  border-color: $utility-blue-300;
 }
 
 button.secondary-button:active {
   background: $utility-blue-100;
-  border: 1px solid $utility-blue-300;
-}
-
-button.secondary-button:focus {
-  border: none;
-  padding: $button-padding;
-}
-
-button.secondary-button:focus:not(:focus-visible) {
-  border: 1px solid $utility-blue-200;
-  padding: $button-border-padding;
-}
-
-button:focus.secondary-button:not(:-moz-focusring) {
-  border: 1px solid $utility-blue-200;
-  padding: $button-border-padding;
-}
-
-button.secondary-button:focus:not(:focus-visible):hover {
-  border: 1px solid $utility-blue-300;
-  padding: $button-border-padding;
-}
-
-button:focus.secondary-button:not(:-moz-focusring):hover {
-  border: 1px solid $utility-blue-300;
-  padding: $button-border-padding;
-}
-
-//icon only button
-button.secondary-button.icon-only-button:focus {
-  padding: $button-icon-padding;
-}
-
-button.secondary-button.icon-only-button {
-  padding: $button-icon-border-padding;
-}
-
-button.secondary-button.icon-only-button:focus {
-  border: none;
-  padding: $button-icon-padding;
-}
-
-button.secondary-button.icon-only-button:focus:not(:focus-visible) {
-  border: 1px solid $utility-blue-200;
-  padding: $button-icon-border-padding;
-}
-
-button:focus.secondary-button.icon-only-button:not(:-moz-focusring) {
-  border: 1px solid $utility-blue-200;
-  padding: $button-icon-border-padding;
-}
-
-button.secondary-button.icon-only-button:focus:not(:focus-visible):hover {
-  border: 1px solid $utility-blue-300;
-  padding: $button-icon-border-padding;
-}
-
-button:focus.secondary-button.icon-only-button:not(:-moz-focusring):hover {
-  border: 1px solid $utility-blue-300;
-  padding: $button-icon-border-padding;
 }
