@@ -1,15 +1,54 @@
-@mixin typography($font-size: 16px, $font-weight: 400, $line-height: 24px, $text-align: left) {
+@mixin typography($font-weight: 400, $font-size: 16px, $line-height: 24px) {
   font-family: 'Golos Text', sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;
   line-height: $line-height;
-  text-align: $text-align;
+  letter-spacing: 0;
 }
 
-@mixin medium-text-base {
-  @include typography(16px, 500, 24px, left);
+//Regular
+@mixin regular-text-sm {
+  @include typography(400, 14px, 20px);
+}
+
+@mixin regular-text-base {
+  @include typography(400, 16px, 24px);
+}
+
+//Medium
+@mixin medium-text-xs {
+  @include typography(500, 12px, 18px);
 }
 
 @mixin medium-text-sm {
-  @include typography(14px, 500, 20px, left);
+  @include typography(500, 14px, 20px);
+}
+
+@mixin medium-text-base {
+  @include typography(500, 16px, 24px);
+}
+
+//SemiBold
+@mixin semibold-text-xl {
+  @include typography(600, 24px, 32px);
+}
+
+@mixin semibold-text-lg {
+  @include typography(600, 20px, 28px);
+}
+
+@mixin semibold-text-2xl {
+  @include typography(600, 32px, 40px);
+}
+
+@mixin semibold-text-3xl {
+  @include typography(600, 40px, 50px);
+}
+
+@mixin semibold-text-4xl {
+  @include typography(600, 48px, 60px);
+}
+
+@mixin semibold-text-5xl {
+  @include typography(600, 56px, 70px);
 }
