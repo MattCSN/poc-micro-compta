@@ -1,7 +1,6 @@
 import React from 'react';
 import { FlexBox } from '@/components/styled';
 import PrimaryButton from '@/components/DesignSystem/Buttons/PrimaryButton/PrimaryButton';
-import SecondaryButtonLegacy from '@/components/DesignSystem/Buttons/SecondaryButtonLegacy/SecondaryButtonLegacy';
 import DangerButton from '@/components/DesignSystem/Buttons/DangerButton/DangerButton';
 import TertiaryButton from '@/components/DesignSystem/Buttons/TertiaryButton/TertiaryButton';
 import CheckCircle from '@/assets/icons/heroicons-solid/check-circle.svg';
@@ -109,22 +108,20 @@ const DemoPanelButtons: React.FC = () => {
             <SecondaryButton label={'Label'} iconComponent={<PencilSquare />} disabled={true} />
             <SecondaryButton iconComponent={<PencilSquare />} disabled={true} />
           </FlexBox>
-        </FlexBox>
-        <FlexBox flexDirection={'column'} gap={'24px'}>
-          <h3>Secondary LEGACY</h3>
           <FlexBox gap={'24px'}>
-            <SecondaryButtonLegacy label={'Label'} />
-            <SecondaryButtonLegacy label={'Label'} iconComponent={<PencilSquare />} />
-            <SecondaryButtonLegacy iconComponent={<PencilSquare />} />
+            <SecondaryButton label={'Label'} small={true} />
+            <SecondaryButton label={'Label'} iconComponent={<PencilSquare />} small={true} />
+            <SecondaryButton iconComponent={<PencilSquare />} small={true} />
           </FlexBox>
-          <FlexBox gap={'24px'} boxSizing={'content-box'}>
-            <SecondaryButtonLegacy label={'Label'} disabled={true} />
-            <SecondaryButtonLegacy
+          <FlexBox gap={'24px'}>
+            <SecondaryButton label={'Label'} disabled={true} small={true} />
+            <SecondaryButton
               label={'Label'}
               iconComponent={<PencilSquare />}
               disabled={true}
+              small={true}
             />
-            <SecondaryButtonLegacy iconComponent={<PencilSquare />} disabled={true} />
+            <SecondaryButton iconComponent={<PencilSquare />} disabled={true} small={true} />
           </FlexBox>
         </FlexBox>
         <FlexBox flexDirection={'column'} gap={'24px'}>
@@ -138,6 +135,16 @@ const DemoPanelButtons: React.FC = () => {
             <DangerButton label={'Label'} disabled={true} />
             <DangerButton label={'Label'} iconComponent={<Trash />} disabled={true} />
             <DangerButton iconComponent={<Trash />} disabled={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <DangerButton label={'Label'} small={true} />
+            <DangerButton label={'Label'} iconComponent={<Trash />} small={true} />
+            <DangerButton iconComponent={<Trash />} small={true} />
+          </FlexBox>
+          <FlexBox gap={'24px'}>
+            <DangerButton label={'Label'} disabled={true} small={true} />
+            <DangerButton label={'Label'} iconComponent={<Trash />} disabled={true} small={true} />
+            <DangerButton iconComponent={<Trash />} disabled={true} small={true} />
           </FlexBox>
         </FlexBox>
         <FlexBox flexDirection={'column'} gap={'24px'}>
@@ -154,18 +161,18 @@ const DemoPanelButtons: React.FC = () => {
           </FlexBox>
           <FlexBox gap={'24px'}>
             <TertiaryButton label={'Label'} small={true} />
-            <TertiaryButton label={'Label'} iconComponent={<CheckCircle />} small={true} />
-            <TertiaryButton iconComponent={<CheckCircle />} small={true} />
+            <TertiaryButton label={'Label'} iconComponent={<PencilSquare />} small={true} />
+            <TertiaryButton iconComponent={<PencilSquare />} small={true} />
           </FlexBox>
           <FlexBox gap={'24px'}>
             <TertiaryButton label={'Label'} disabled={true} small={true} />
             <TertiaryButton
               label={'Label'}
-              iconComponent={<CheckCircle />}
+              iconComponent={<PencilSquare />}
               disabled={true}
               small={true}
             />
-            <TertiaryButton iconComponent={<CheckCircle />} disabled={true} small={true} />
+            <TertiaryButton iconComponent={<PencilSquare />} disabled={true} small={true} />
           </FlexBox>
         </FlexBox>
       </FlexBox>

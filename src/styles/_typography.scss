@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'GolosText';
+  src: url('@/assets/fonts/Golos_Text/GolosText-VariableFont_wght.ttf') format('truetype');
+}
+
 @mixin typography($font-weight: 400, $font-size: 16px, $line-height: 24px) {
-  font-family: 'Golos Text', sans-serif;
+  font-family: 'GolosText';
   font-size: $font-size;
   font-weight: $font-weight;
   line-height: $line-height;

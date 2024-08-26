@@ -12,11 +12,11 @@ button.gustave-button.bordered-button.icon-only-button {
   padding: $button-icon-border-padding;
 }
 
-button:focus:focus-visible {
+button.gustave-button.bordered-button:focus:focus-visible {
   border-color: transparent;
 }
 
-button:focus:-moz-focusring {
+button.gustave-button.bordered-button:focus:-moz-focusring {
   border-color: transparent;
 }
 

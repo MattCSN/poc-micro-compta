@@ -6,15 +6,17 @@ interface ButtonProps {
   label?: string;
   iconComponent?: React.ReactNode;
   disabled?: boolean;
+  small?: boolean;
 }
 
-const DangerButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled }) => {
+const DangerButton: React.FC<ButtonProps> = ({ label, iconComponent, disabled, small }) => {
   return (
     <Button
       className="danger-button"
       label={label}
       iconComponent={iconComponent}
       disabled={disabled}
+      small={small}
     />
   );
 };
